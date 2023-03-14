@@ -24,7 +24,7 @@ const Navbar = () => {
           {/* Logo */}
           <img src={logo} alt="logo" className='h-9 object-contain' />
           {/* Title */}
-          <p className='text-white text-[18px] font-bold cursor-pointer sm:block hidden'> Front-end Web Developer</p>
+          <p className='text-white text-[24px] mt-2 cursor-pointer sm:block hidden font-megrim'>| Front-end Developer</p>
         </Link>
         {/* Links for larger screen sizes*/}
         <ul className='list-none hidden sm:flex flex-row gap-10'>
