@@ -1,24 +1,25 @@
 import { Suspense, useEffect, useState } from 'react';
-
-import { Canvas } from '@react-three/fiber';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
-
 import CanvasLoader from '../Loader';
 
 const Computers = () => {
   const computer = useGLTF('./enterprise/scene.gltf')
+  const [rotation, setRotation] = useState(0)
+
+  useFrame(() => {
+    setRotation(rotation => rotation - 0.008)
+  })
+
   return (
-    <mesh>
-      <hemisphereLight intensity={1}
-        groundColor='black' />
-      {/* <pointLight intensity={1} /> */}
+    <mesh rotation-y={rotation}>
+      <hemisphereLight intensity={1} groundColor='black' />
       <primitive
         object={computer.scene}
         scale={0.2}
         position={[6, -1, 6]}
         rotation={[-0.1, -0.75, 0.5]}
       />
-
     </mesh>
   )
 }
@@ -34,8 +35,8 @@ const ComputersCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
+          maxPolarAngle={Math.PI / 2}
         />
         <Computers />
       </Suspense>
@@ -43,4 +44,5 @@ const ComputersCanvas = () => {
     </Canvas>
   )
 }
+
 export default ComputersCanvas
