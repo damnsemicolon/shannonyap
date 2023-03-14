@@ -8,7 +8,7 @@ const Computers = () => {
   const [rotation, setRotation] = useState(0)
 
   useFrame(() => {
-    setRotation(rotation => rotation - 0.008)
+    setRotation(rotation => rotation - 0.004)
   })
 
   return (
