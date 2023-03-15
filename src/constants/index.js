@@ -17,6 +17,8 @@ import {
     docker,
     meta,
     starbucks,
+    weave,
+    generalnice,
     tesla,
     shopify,
     carrent,
@@ -49,10 +51,10 @@ import {
       title: "React Native Developer",
       icon: mobile,
     },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
+    // {
+    //   title: "Backend Developer",
+    //   icon: backend,
+    // },
     {
       title: "Content Creator",
       icon: creator,
@@ -116,55 +118,42 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Senior Sales Executive",
+      company_name: "Weave Living",
+      icon: weave,
+      iconBg: "#fff",
+      date: "Nov 2018 - Sep 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Achieved Individual Sales of HKD23.4M (GBP2.6M) in 2021 under COVID, >40% contribution of team of 5", 
+        "Handled over 500 satisfied customers in 2021, 45% of annual total confirmed deals of whole company", 
+        "Conducted viewings with high conversion rate:  individual conversion rate: 19% vs. team average: 14%", 
+        "Oversaw 5 properties ranging over 600 units of co-living bedrooms to luxury multi-family apartments", 
+        "Cross-team champion for initiatives, pricing, license agreement drafting, finance operation, events ideation, marketing involvement, market research, customer engagement, etc.", 
+        "Developed the Leasing Team from 1-man-band to 5 team members."
+
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: "Senior Officer",
+      company_name: "General Nice Resources (Hong Kong) Limited",
+      icon: generalnice,
+      iconBg: "#ffffff",
+      date: "Dec 2016 - Nov 2018",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Co-supervision of Australian Winery - Chalkers Crossing: Managed Marketing, Operations, and Strategic Development of an Australian Winery; actively establishing a local presence and expanding its overseas market. Turned loss into profit within a year through detailed inspections of the Winery's managerial culprits, and developed strategies to cut costs and increase profits",
+        "Property Management: In charge of Property Management Department for all 31 HK properties of General Nice Group. Scope includes property management, leasing, and liaising with tenants. Complements received by repairing clashing relationships between tenants and predecessor. Completed the sale of 5 properties in UK and Singapore."
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      title: "Associate",
+      company_name: "General Nice Resources (Hong Kong) Limited",
+      icon: generalnice,
+      iconBg: "#ffffff",
+      date: "Aug 2012 - Dec 2016",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Treasury Department: Liaised closely with banks and security firms to monitor company portfolios; controlled mortgage and expense budgeting, also handled Letters of Credit.	Created an electric payment system solution which optimized daily payment efficiency by 75%",
+        "Risk and Compliance Department - Drafted loan agreements, trade facility negotiation letters, board resolutions and evaluated projects vary from real estate projects in China to Iron Ore mines in Australia",
+        "Property Management - Acted as landlord representative to negotiate with agents and tenants. Oversaw the repurposing of a farmland plot and increased its value by 3 folds"
       ],
     },
   ];
