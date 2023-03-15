@@ -121,9 +121,9 @@ import {
       date: "Nov 2018 - Sep 2022",
       points: [
         "Achieved Individual Sales of HKD23.4M (GBP2.6M) in 2021 under COVID, >40% contribution of team of 5", 
-        "Handled over 500 satisfied customers in 2021, 45% of annual total confirmed deals of whole company", 
-        "Conducted viewings with high conversion rate:  individual conversion rate: 19% vs. team average: 14%", 
-        "Oversaw 5 properties ranging over 600 units of co-living bedrooms to luxury multi-family apartments", 
+        "Handled over 500 satisfied customers in 2021, 45% of annual total confirmed deals of whole company.", 
+        "Conducted viewings with high conversion rate:  individual conversion rate: 19% vs. team average: 14%.", 
+        "Oversaw 5 properties ranging over 600 units of co-living bedrooms to luxury multi-family apartments.", 
         "Cross-team champion for initiatives, pricing, license agreement drafting, finance operation, events ideation, marketing involvement, market research, customer engagement, etc.", 
         "Developed the Leasing Team from 1-man-band to 5 team members."
 
@@ -136,7 +136,7 @@ import {
       iconBg: "#ffffff",
       date: "Dec 2016 - Nov 2018",
       points: [
-        "Co-supervision of Australian Winery - Chalkers Crossing: Managed Marketing, Operations, and Strategic Development of an Australian Winery; actively establishing a local presence and expanding its overseas market. Turned loss into profit within a year through detailed inspections of the Winery's managerial culprits, and developed strategies to cut costs and increase profits",
+        "Co-supervision of Australian Winery - Chalkers Crossing: Managed Marketing, Operations, and Strategic Development of an Australian Winery; actively establishing a local presence and expanding its overseas market. Turned loss into profit within a year through detailed inspections of the Winery's managerial culprits, and developed strategies to cut costs and increase profits.",
         "Property Management: In charge of Property Management Department for all 31 HK properties of General Nice Group. Scope includes property management, leasing, and liaising with tenants. Complements received by repairing clashing relationships between tenants and predecessor. Completed the sale of 5 properties in UK and Singapore."
       ],
     },
@@ -147,9 +147,9 @@ import {
       iconBg: "#ffffff",
       date: "Aug 2012 - Dec 2016",
       points: [
-        "Treasury Department: Liaised closely with banks and security firms to monitor company portfolios; controlled mortgage and expense budgeting, also handled Letters of Credit.	Created an electric payment system solution which optimized daily payment efficiency by 75%",
-        "Risk and Compliance Department - Drafted loan agreements, trade facility negotiation letters, board resolutions and evaluated projects vary from real estate projects in China to Iron Ore mines in Australia",
-        "Property Management - Acted as landlord representative to negotiate with agents and tenants. Oversaw the repurposing of a farmland plot and increased its value by 3 folds"
+        "Treasury Department: Liaised closely with banks and security firms to monitor company portfolios; controlled mortgage and expense budgeting, also handled Letters of Credit.	Created an electric payment system solution which optimized daily payment efficiency by 75%.",
+        "Risk and Compliance Department - Drafted loan agreements, trade facility negotiation letters, board resolutions and evaluated projects vary from real estate projects in China to Iron Ore mines in Australia.",
+        "Property Management - Acted as landlord representative to negotiate with agents and tenants. Oversaw the repurposing of a farmland plot and increased its value by 3 folds."
       ],
     },
   ];
