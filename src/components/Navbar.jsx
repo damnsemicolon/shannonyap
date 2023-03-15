@@ -28,7 +28,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="navbar bg-primary fixed top-0 py-2 left-0 w-full z-50 transition-all duration-300 ease-in-out">
+    <nav className="bg-primary fixed top-0 py-2 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between">
           <Link
