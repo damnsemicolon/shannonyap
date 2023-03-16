@@ -9,10 +9,10 @@ import { textVariant } from '../utils/motion';
 const Tech = () => {
   return (
 <>
-    <motion.div variants={textVariant()}>
+    <div variants={textVariant()}>
     <p className={styles.sectionSubText}>The Journey Never Ends</p>
     <h2 className={styles.sectionHeadText}>Tech Skills.</h2>
-  </motion.div>
+  </div>
 
     <div className='flex flex-row flex-wrap justify-center gap-5'>
       {technologies.map((technology) => (

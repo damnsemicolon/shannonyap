@@ -2,12 +2,12 @@ import Tilt from 'react-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
-import { github } from '../assets';
+import { github, demo } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, deployed_link }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 1)}>
       <Tilt
@@ -22,20 +22,30 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
           <img
             src={image}
             alt={name}
-            className='w-full h-full object-cover rounded-2xl'/>
-        </div>
-
-        <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-          <div
-            onClick={() => window.open(source_code_link, '_blank')}
-            className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
-            <img
-              src={github}
-              alt='github'
-              className='w-1/2 h-1/2 object-contain'/>
-
+            className='w-full h-full object-cover rounded-2xl' />
+          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          {/* GITHUB LINK */}
+            <div
+              onClick={() => window.open(source_code_link, '_blank')}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
+              <img
+                src={github}
+                alt='github'
+                className='w-1/2 h-1/2 object-contain hover:scale-150 transition-transform duration-300 ease-in-out' />
+            </div>
+            {/* DEPLOYED LINK */}
+            <div
+              onClick={() => window.open(deployed_link, '_blank')}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
+              <img
+                src={demo}
+                alt='demo'
+                className='w-1/2 h-1/2 object-contain hover:scale-150 transition-transform duration-300 ease-in-out' />
+            </div>
           </div>
         </div>
+
+
       </Tilt>
     </motion.div>
   )
@@ -44,10 +54,10 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <div variants={textVariant()}>
         <p className={styles.sectionSubText}>Fingers crossed hope it still loads</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
-      </motion.div>
+      </div>
 
       <div className='w-full flex'>
         <motion.p
