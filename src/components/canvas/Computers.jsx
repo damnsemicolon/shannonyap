@@ -3,12 +3,14 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import CanvasLoader from '../Loader';
 
-const Computers = ({ isMobile }) => {
+const Computers = ({ isMobile, shouldRotate }) => {
   const computer = useGLTF('./enterprise/scene.gltf')
   const [rotation, setRotation] = useState(0)
 
   useFrame(() => {
-    setRotation(rotation => rotation - 0.01)
+    if (shouldRotate) {
+      setRotation(rotation => rotation - 0.01);
+    }
   })
 
   return (
@@ -26,6 +28,7 @@ const Computers = ({ isMobile }) => {
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [shouldRotate, setShouldRotate] = useState(false);
 
   useEffect(() => {
     // add a listener for screen size changes at 500px
@@ -40,14 +43,35 @@ const ComputersCanvas = () => {
 
     // add a callback function as a listener for changes to the media query
     mediaQuery.addEventListener('change', handleMediaQueryChange); 
-  }, [])
-  
+
     // remove the listener when the component is unmounted
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange);
+    }
+  }, [])
+
+  useEffect(() => {
+    const handleBlur = () => {
+      setShouldRotate(false);
+    }
+    const handleFocus = () => {
+      setShouldRotate(true);
+    }
+    window.addEventListener('blur', handleBlur);
+    window.addEventListener('focus', handleFocus);
+
+    return () => {
+      window.removeEventListener('blur', handleBlur);
+      window.removeEventListener('focus', handleFocus);
+    }
+  }, [])
+
   return (
     <Canvas
       frameloop='demand'
       camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
+      gl={{ preserveDrawingBuffer: false }}
+      pixelRatio={0.5} // set a lower resolution
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
@@ -55,7 +79,7 @@ const ComputersCanvas = () => {
           minPolarAngle={Math.PI / 1.8}
           maxPolarAngle={Math.PI / 1.7}
         />
-        <Computers isMobile={isMobile} />
+        <Computers isMobile={isMobile} shouldRotate={shouldRotate} />
       </Suspense>
       <Preload all />
     </Canvas>
