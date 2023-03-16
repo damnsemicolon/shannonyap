@@ -25,10 +25,6 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 // company logos
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 import weave from "./company/weave.png";
 import generalnice from "./company/generalnice.png"
 
@@ -66,12 +62,8 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
   weave,
   generalnice,
-  tesla,
   tailwindlp,
   rich,
   weatherdashboard,
