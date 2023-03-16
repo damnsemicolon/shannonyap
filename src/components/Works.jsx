@@ -1,22 +1,16 @@
-import Tilt from 'react-tilt';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { github, demo } from '../assets';
-import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
+import { SectionWrapper } from '../hoc';
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, deployed_link }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 1)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450
-        }}
-        className='bg-tertiary p-1 rounded-2xl sm:w-[330px] w-full'
+    <motion.div variants={fadeIn("up", "spring", index * 0.75)}>
+      <div className='bg-tertiary p-1 rounded-2xl sm:w-[330px] w-full'
       >
         <div className='relative w-full h-[330px]'>
         {/* Project Image */}
@@ -61,7 +55,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
             </p>
           ))}
         </div>
-      </Tilt>
+      </div>
     </motion.div>
   )
 }
@@ -77,7 +71,7 @@ const Works = () => {
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
+          className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
           Following projects showcases my skills and experience throughout my never-ending coding journey. Hover over the cards for more details.
         </motion.p>
       </div>

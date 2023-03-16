@@ -7,27 +7,11 @@ import { logo, menu, close } from '../assets';
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
-    <nav className="bg-primary fixed top-0 py-2 left-0 w-full z-50">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-between">
+    <nav className="fixed bg-primary py-2 left-0 w-full z-50">
+      <div className="max-w-7xl mx-auto px-4 z-50">
+        <div className="flex justify-between z-50">
           <Link
             to="/"
             className="flex items-center gap-2"
