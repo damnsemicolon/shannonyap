@@ -23,6 +23,11 @@ import {
     threejs,
     tailwindlp,
     rich,
+    weatherdashboard,
+    readmegenerator,
+    workdayscheduler,
+    passwordgenerator,
+
   } from "../assets";
   
   export const navLinks = [
@@ -184,6 +189,7 @@ import {
   ];
   
   const projects = [
+    // Card 1
     {
       name: "Tailwind Landing Page",
       description:
@@ -206,6 +212,7 @@ import {
       source_code_link: "https://github.com/damnsemicolon/tailwind-landingpage",
       deployed_link: "https://damnsemicolon.github.io/tailwind-landingpage/"
     },
+    // Card 2
     {
       name: "Am I Rich Yet",
       description:
@@ -232,27 +239,120 @@ import {
       source_code_link: "https://github.com/LiliBear1/Financial-Tracking-App",
       deployed_link: "https://chic-swan-b48b65.netlify.app/"
     },
+    // Card 3
     {
-      name: "Trip Guide",
+      name: "Weather Dashboard",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Weather App that you can search for your city and get 5-day weather forecast in an instant. Developed with HTML, CSS, JavaScript and Server API along with jQuery ",
       tags: [
         {
-          name: "nextjs",
+          name: "javascript",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "jQuery",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "restAPI",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-      deployed_link: "https://facebook.com"
+      image: weatherdashboard,
+      source_code_link: "https://github.com/damnsemicolon/weather-dashboard-shannon",
+      deployed_link: "https://damnsemicolon.github.io/weather-dashboard-shannon/"
+    },
+    // Card 4
+    {
+      name: "README Generator",
+      description:
+        "Use Node.js to quickly create a README tailored for YOUR project. Created with JavaScript ES6 & Node.js",
+      tags: [
+        {
+          name: "javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "node.js",
+          color: "green-text-gradient",
+        }
+      ],
+      image: readmegenerator,
+      source_code_link: "https://github.com/damnsemicolon/readme-generator-nodejs",
+      deployed_link: "https://github.com/damnsemicolon/readme-generator-nodejs"
+    },
+    // Card 5
+    {
+      name: "Workday Scheduler",
+      description:
+        "Workday Scheudler app that allows you to save and edit your daily schedule, data saved to your device so no need to worry about privacy concerns. Created with HTML, CSS, JavaScript and Third-Party API - jQuery",
+      tags: [
+        {
+          name: "HTML5",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "CSS3",
+          color: "text-[#ff9933]",
+        },
+        {
+          name: "javascript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "jQuery",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: workdayscheduler,
+      source_code_link: "https://github.com/damnsemicolon/work-day-scheduler-shannon",
+      deployed_link: "https://damnsemicolon.github.io/work-day-scheduler-shannon/"
+    },
+    // Card 6
+    {
+      name: "Password Generator",
+      description:
+        "Web application that gets user preferences through prompts, then generates a random password based on the criteria(s) selected. Created with HTML, CSS, and Javascript",
+      tags: [
+        {
+          name: "HTML5",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "CSS3",
+          color: "text-[#ff9933]",
+        },
+        {
+          name: "javascript",
+          color: "green-text-gradient",
+        },
+      ],
+      image: passwordgenerator,
+      source_code_link: "https://github.com/damnsemicolon/password-generator-shannon",
+      deployed_link: "https://damnsemicolon.github.io/password-generator-shannon/"
+    },
+    // Card 7
+    {
+      name: "Weather Dashboard",
+      description:
+        "Weather App that you can search for your city and get 5-day weather forecast in an instant. Developed with HTML, CSS, JavaScript and Server API along with jQuery ",
+      tags: [
+        {
+          name: "javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "jQuery",
+          color: "green-text-gradient",
+        },
+        {
+          name: "restAPI",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: weatherdashboard,
+      source_code_link: "https://github.com/damnsemicolon/weather-dashboard-shannon",
+      deployed_link: "https://damnsemicolon.github.io/weather-dashboard-shannon/"
     },
   ];
   

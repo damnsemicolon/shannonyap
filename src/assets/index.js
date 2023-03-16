@@ -38,6 +38,11 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import tailwindlp from "./tailwindlp.png";
 import rich from "./rich.png"
+import weatherdashboard from "./weatherdashboard.png"
+import passwordgenerator from "./passwordgenerator.png"
+import readmegenerator from "./readmegenerator.png"
+import workdayscheduler from "./workdayscheduler.png"
+
 
 
 export {
@@ -74,4 +79,8 @@ export {
   tripguide,
   tailwindlp,
   rich,
+  weatherdashboard,
+  passwordgenerator,
+  readmegenerator,
+  workdayscheduler
 };
