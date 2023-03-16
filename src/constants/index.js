@@ -354,26 +354,30 @@ import {
     },
     // Card 8
     {
-      name: "Weather Dashboard",
+      name: "Javscript Code Quiz",
       description:
-        "Weather App that you can search for your city and get 5-day weather forecast in an instant. Developed with HTML, CSS, JavaScript and Server API along with jQuery ",
+        "A fun timed-quiz about Javascript made with HTML, CSS, JavaScript and Web API. *hint* the 3rd option is the answers.",
       tags: [
         {
-          name: "javascript",
-          color: "blue-text-gradient",
+          name: "HTML5",
+          color: "pink-text-gradient",
         },
         {
-          name: "jQuery",
+          name: "CSS3",
+          color: "text-[#ff9933]",
+        },
+        {
+          name: "javascript",
           color: "green-text-gradient",
         },
         {
-          name: "restAPI",
-          color: "pink-text-gradient",
+          name: "webAPI",
+          color: "blue-text-gradient",
         },
       ],
-      image: weatherdashboard,
-      source_code_link: "https://github.com/damnsemicolon/weather-dashboard-shannon",
-      deployed_link: "https://damnsemicolon.github.io/weather-dashboard-shannon/"
+      image: codequiz,
+      source_code_link: "https://github.com/damnsemicolon/code-quiz-shannon",
+      deployed_link: "https://damnsemicolon.github.io/code-quiz-shannon/"
     }
   ];
   
