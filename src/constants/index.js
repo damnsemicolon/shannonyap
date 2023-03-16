@@ -17,9 +17,6 @@ import {
     docker,
     weave,
     generalnice,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
     tailwindlp,
     rich,
@@ -27,7 +24,8 @@ import {
     readmegenerator,
     workdayscheduler,
     passwordgenerator,
-
+    codequiz,
+    weatherpickmeup
   } from "../assets";
   
   export const navLinks = [
@@ -216,7 +214,7 @@ import {
     {
       name: "Am I Rich Yet",
       description:
-        "Web application of a financial tracking app built using React, npm, chart.js, and chakra ui. The app allows users to keep track of their income and expenses, with visual aids provided by chart.js and an appealing user interface thanks to chakra ui.",
+        "A financial tracking app that allows users to keep track of their income and expenses. Built in team effort using React, npm, chart.js, and chakra ui.",
       tags: [
         {
           name: "react",
@@ -333,6 +331,29 @@ import {
     },
     // Card 7
     {
+      name: "Weather Pick-Me-Up",
+      description:
+        "Web app that displays the weather dashboard for your searched city, and displays a GIF in relation to the weather that cheers you up. Developed in group effort with OpenMeteo and GIPHI API, bootstrap, and Javscript",
+      tags: [
+        {
+          name: "javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "bootstrap",
+          color: "green-text-gradient",
+        },
+        {
+          name: "restAPI",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: weatherpickmeup,
+      source_code_link: "https://github.com/stevelab1/weather-pickmeup/",
+      deployed_link: "https://stevelab1.github.io/weather-pickmeup/"
+    },
+    // Card 8
+    {
       name: "Weather Dashboard",
       description:
         "Weather App that you can search for your city and get 5-day weather forecast in an instant. Developed with HTML, CSS, JavaScript and Server API along with jQuery ",
@@ -353,7 +374,7 @@ import {
       image: weatherdashboard,
       source_code_link: "https://github.com/damnsemicolon/weather-dashboard-shannon",
       deployed_link: "https://damnsemicolon.github.io/weather-dashboard-shannon/"
-    },
+    }
   ];
   
   export { services, technologies, experiences, testimonials, projects };

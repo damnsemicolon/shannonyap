@@ -33,16 +33,14 @@ import weave from "./company/weave.png";
 import generalnice from "./company/generalnice.png"
 
 // projects
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import tailwindlp from "./tailwindlp.png";
 import rich from "./rich.png"
 import weatherdashboard from "./weatherdashboard.png"
 import passwordgenerator from "./passwordgenerator.png"
 import readmegenerator from "./readmegenerator.png"
 import workdayscheduler from "./workdayscheduler.png"
-
+import codequiz from "./codequiz.png"
+import weatherpickmeup from "./weather-pickmeup.png"
 
 
 export {
@@ -74,13 +72,12 @@ export {
   weave,
   generalnice,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
   tailwindlp,
   rich,
   weatherdashboard,
   passwordgenerator,
   readmegenerator,
-  workdayscheduler
+  workdayscheduler,
+  codequiz,
+  weatherpickmeup
 };
