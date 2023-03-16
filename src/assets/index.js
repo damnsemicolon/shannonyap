@@ -1,3 +1,4 @@
+// logos
 import logo from "./logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
@@ -8,6 +9,7 @@ import demo from "./demo.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+// tech skills
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -22,6 +24,7 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+// company logos
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -29,9 +32,13 @@ import tesla from "./company/tesla.png";
 import weave from "./company/weave.png";
 import generalnice from "./company/generalnice.png"
 
+// projects
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import tailwindlp from "./tailwindlp.png";
+import rich from "./rich.png"
+
 
 export {
   logo,
@@ -65,4 +72,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  tailwindlp,
+  rich,
 };

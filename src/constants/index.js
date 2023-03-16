@@ -21,6 +21,8 @@ import {
     jobit,
     tripguide,
     threejs,
+    tailwindlp,
+    rich,
   } from "../assets";
   
   export const navLinks = [
@@ -183,16 +185,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Tailwind Landing Page",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web application of a landing page for a company utilizing tailwindCSS along with React app for scalibility and deployment.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "javascript",
           color: "green-text-gradient",
         },
         {
@@ -200,31 +202,35 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-      deployed_link: "https://facebook.com"
+      image: tailwindlp,
+      source_code_link: "https://github.com/damnsemicolon/tailwind-landingpage",
+      deployed_link: "https://damnsemicolon.github.io/tailwind-landingpage/"
     },
     {
-      name: "Job IT",
+      name: "Am I Rich Yet",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application of a financial tracking app built using React, npm, chart.js, and chakra ui. The app allows users to keep track of their income and expenses, with visual aids provided by chart.js and an appealing user interface thanks to chakra ui.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "node.js",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "chart.js",
           color: "pink-text-gradient",
         },
+        {
+          name: "chakra.ui",
+          color: "text-[#ff9933]",
+        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-      deployed_link: "https://facebook.com"
+      image: rich,
+      source_code_link: "https://github.com/LiliBear1/Financial-Tracking-App",
+      deployed_link: "https://chic-swan-b48b65.netlify.app/"
     },
     {
       name: "Trip Guide",
