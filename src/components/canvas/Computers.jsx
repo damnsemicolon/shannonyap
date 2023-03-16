@@ -9,7 +9,7 @@ const Computers = ({ isMobile, shouldRotate }) => {
 
   useFrame(() => {
     if (shouldRotate) {
-      setRotation(rotation => rotation - 0.01);
+      setRotation(rotation => rotation - 0.02);
     }
   })
 
@@ -71,7 +71,7 @@ const ComputersCanvas = () => {
       frameloop='demand'
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: false }}
-      pixelRatio={0.5} // set a lower resolution
+      pixelratio={1} // set a lower resolution
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
