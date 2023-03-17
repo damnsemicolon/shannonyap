@@ -52,10 +52,10 @@ import {
       title: "React Developer",
       icon: mobile,
     },
-    // {
-    //   title: "Backend Developer",
-    //   icon: backend,
-    // },
+    {
+      title: "UI/UX Designer",
+      icon: backend,
+    },
     {
       title: "Content Creator",
       icon: creator,

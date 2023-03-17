@@ -13,7 +13,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
     variants={fadeIn("up", "spring", index * 0.75)} 
     className='bg-tertiary p-1 rounded-3xl sm:w-[330px] w-full'
       >
-        <div className='h-[330px] opacity-50 transition duration-300 ease-in-out hover:opacity-100'>
+        <div className='h-[330px]'>
           {/* Project Image */}
           <img
             src={image}
