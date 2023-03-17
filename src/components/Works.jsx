@@ -9,17 +9,18 @@ import { SectionWrapper } from '../hoc';
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, deployed_link }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.75)}>
-      <div className='bg-tertiary p-1 rounded-2xl sm:w-[330px] w-full'
+    <motion.div 
+    variants={fadeIn("up", "spring", index * 0.75)} 
+    className='bg-tertiary p-1 rounded-3xl sm:w-[330px] w-full'
       >
-        <div className='relative w-full h-[330px]'>
-        {/* Project Image */}
+        <div className='h-[330px]'>
+          {/* Project Image */}
           <img
             src={image}
             alt={name}
-            className='w-full h-full object-cover rounded-2xl' />
-         {/* Buttons */}
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+            className=' flex object-cover rounded-3xl' />
+          {/* Buttons */}
+          <div className='-mt-12 inset-0 flex justify-end m-3 card-img_hover'>
             {/* Github Button */}
             <div
               onClick={() => window.open(source_code_link, '_blank')}
@@ -55,7 +56,6 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
             </p>
           ))}
         </div>
-      </div>
     </motion.div>
   )
 }

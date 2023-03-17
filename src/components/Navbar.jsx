@@ -9,42 +9,42 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="fixed bg-primary py-2 left-0 w-full z-50">
-      <div className="max-w-7xl mx-auto px-4 z-50">
-        <div className="flex justify-between z-50">
+    <nav className="fixed bg-primary py-2 left-0 w-full navi">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex justify-between">
           <Link
             to="/"
-            className="flex items-center gap-2 z-50"
+            className="flex items-center gap-2"
             onClick={() => {
               setActive('');
               window.scrollTo(0, 0);
             }}
           >
-            <img src={logo} alt="logo" className="h-9 object-contain z-50" />
-            <p className="font-megrim text-white text-2xl z-50 hidden lg:block">
+            <img src={logo} alt="logo" className="h-9 object-contain" />
+            <p className="font-megrim text-white text-2xl hidden lg:block">
               | Front-end Developer
             </p>
           </Link>
           <button
             type="button"
-            className="sm:hidden block text-white z-50"
+            className="sm:hidden block text-white"
             onClick={() => setToggle(!toggle)}
           >
             {toggle ? (
-              <img src={close} alt="close" className="w-6 h-6 z-50" />
+              <img src={close} alt="close" className="w-6 h-6" />
             ) : (
-              <img src={menu} alt="menu" className="w-6 h-6 z-50" />
+              <img src={menu} alt="menu" className="w-6 h-6" />
             )}
           </button>
-          <ul className="hidden z-50 sm:flex sm:gap-10 items-center">
+          <ul className="hidden sm:flex sm:gap-10 items-center">
             {navLinks.map((link) => (
               <li
                 key={link.id}
                 className={`${
                   active === link.title
-                    ? 'text-white z-50'
-                    : 'text-secondary z-50'
-                } font-medium hover:text-white text-base cursor-pointer z-50`}
+                    ? 'text-white'
+                    : 'text-secondary'
+                } font-medium hover:text-white text-base cursor-pointer`}
                 onClick={() => setActive(link.title)}
               >
                 <a href={`#${link.id}`}>{link.title}</a>
@@ -55,15 +55,15 @@ const Navbar = () => {
       </div>
       <ul
         className={`${
-          toggle ? 'block z-50' : 'hidden'
-        } sm:hidden pb-6 pt-2 text-center z-50`}
+          toggle ? 'block' : 'hidden'
+        } sm:hidden pb-6 pt-2 text-center`}
       >
         {navLinks.map((link) => (
           <li
             key={link.id}
             className={`${
-              active === link.title ? 'text-white z-50' : 'text-secondary z-50'
-            } font-medium hover:text-white text-2xl cursor-pointer z-50`}
+              active === link.title ? 'text-white' : 'text-secondary'
+            } font-medium hover:text-white text-2xl cursor-pointer`}
             onClick={() => {
               setToggle(!toggle);
               setActive(link.title);
