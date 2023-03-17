@@ -27,7 +27,7 @@ const About = () => {
     <>
       <div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h3 className={styles.sectionHeadText}>Overview.</h3>
       </div>
 
       <div className='w-full flex'>
