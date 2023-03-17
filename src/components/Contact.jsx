@@ -28,9 +28,6 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    // 
-    // 
-    // 
     emailjs.send(
       'service_kw1bnmn',
       'template_e74d9zd',
@@ -40,11 +37,26 @@ const Contact = () => {
         to_name: 'Shannon',
         to_email: 'shannoninengland@gmail.com',
         message: form.message,
+      },
+      'gbS-vvntmuBSlFnsi'
+      )
+      .then(() => {
+        setLoading(false);
+        alert('Thank you for your message, I will get back to you soon!');
+
+        setForm({
+          name:'',
+          email:'',
+          message:'',
+        })
+      }, (error) => {
+        setLoading(false)
+        alert('Something went wrong, please try again or send me an email directly at shannoninengland@gmail.com.')
       })
   }
 
   return (
-    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
+    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden bg-hero'>
       {/* Contact modal */}
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
