@@ -25,7 +25,8 @@ import {
     workdayscheduler,
     passwordgenerator,
     codequiz,
-    weatherpickmeup
+    weatherpickmeup,
+    github
   } from "../assets";
   
   export const navLinks = [
@@ -57,7 +58,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Prompt Enginnering",
       icon: creator,
     },
   ];
@@ -119,11 +120,24 @@ import {
   
   const experiences = [
     {
+      title: "Aspiring Front-end Developer",
+      company_name: "",
+      icon: github,
+      iconBg: "#333",
+      date: "Nov 2022 - Present",
+      points: [
+        "Completed Edx Skill Bootcamp for Front-end Web Development - a 16-week intensive bootcamp program focused on gaining technical programming skills in:",
+        "HTML, CSS, Javascript, jQuery, Bootstrap, Nodejs, and ReactJS. Attained final grade of A+ (>100%)",
+        "Continued self-learning with the latest technologies and js frameworks - TailwindCSS, Three.js, Vite, etc", 
+        "Latest projects can be found in below 'Projects' section", 
+      ],
+    },
+    {
       title: "Senior Sales Executive",
       company_name: "Weave Living",
       icon: weave,
       iconBg: "#fff",
-      date: "Nov 2018 - Sep 2022",
+      date: "Nov 2018 - Oct 2022",
       points: [
         "Achieved Individual Sales of HKD23.4M (GBP2.6M) in 2021 under COVID, >40% contribution of team of 5", 
         "Handled over 500 satisfied customers in 2021, 45% of annual total confirmed deals of whole company.", 
