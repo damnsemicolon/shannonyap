@@ -2,14 +2,13 @@ import { BallCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { technologies } from '../constants';
 import { styles } from '../styles';
-import { textVariant } from '../utils/motion';
 
 
 const Tech = () => {
   return (
 <>
-    <div variants={textVariant()}>
-    <p className={styles.sectionSubText}>The Journey Never Ends</p>
+    <div>
+    <p className={styles.sectionSubText}>To explore strange new technologies</p>
     <h2 className={styles.sectionHeadText}>Tech Skills.</h2>
   </div>
 

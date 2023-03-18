@@ -42,7 +42,7 @@ const Contact = () => {
       )
       .then(() => {
         setLoading(false);
-        alert('Thank you for your message, I will get back to you soon!');
+        alert('Thank you for your message! Live long and prosper🖖.');
 
         setForm({
           name:'',
@@ -51,19 +51,21 @@ const Contact = () => {
         })
       }, (error) => {
         setLoading(false)
-        alert('Something went wrong, please try again or send me an email directly at shannoninengland@gmail.com.')
+        alert("He's dead, Jim! Please try again or send me an email directly at shannoninengland@gmail.com.")
       })
   }
 
   return (
-    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden bg-hero'>
+    <>
+    <p className={styles.sectionSubText}>To boldly go...</p>
+        <h3 className={styles.sectionHeadText}>Contact.</h3>
+    <div className=' xl:flex-row flex-col-reverse flex gap-8 overflow-hidden'>
       {/* Contact modal */}
+      
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
-        className='flex-[0.75 bg-black-100 p-8 rounded-2xl'>
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
-
+        className='bg-black-100 px-8 pb-8 rounded-2xl'>
+       
         <form
           ref={formRef}
           onSubmit={handleSubmit}
@@ -78,7 +80,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
+              className='bg-tertiary py-4 px-12 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
             />
           </label>
           {/* Email Address */}
@@ -90,7 +92,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
+              className='bg-tertiary py-3 px-12 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
             />
           </label>
           {/* Message */}
@@ -102,13 +104,13 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="What's your message?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
+              className='bg-tertiary py-3 px-12 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
             />
           </label>
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-3xl'>
+            className='bg-tertiary py-3 w-full outline-none text-white font-bold shadow-md shadow-primary rounded-3xl'>
             {loading ? 'Sending...' : 'Send'}
           </button>
         </form>
@@ -116,10 +118,11 @@ const Contact = () => {
       {/* 3D Earth Modal */}
       <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h[350px]'>
+        className='xl:flex-1 xl:h-[auto] md:h-[550px] h[350px]'>
         <EarthCanvas />
       </motion.div>
     </div>
+    </>
   )
 }
 

@@ -39,7 +39,7 @@ import {
       title: "Experience",
     },
     {
-      id: "work",
+      id: "projects",
       title: "Projects",
     },
     {
@@ -399,4 +399,4 @@ import {
     }
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };

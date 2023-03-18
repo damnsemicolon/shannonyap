@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { github, demo } from '../assets';
 import { projects } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
+import { fadeIn } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, deployed_link }) => {
@@ -63,8 +63,8 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 const Works = () => {
   return (
     <>
-      <div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Fingers crossed, hope it still loads</p>
+      <div>
+        <p className={styles.sectionSubText}>To seek out new frameworks and new project ideas</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </div>
 
@@ -72,7 +72,7 @@ const Works = () => {
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-          Following projects showcases my skills and experience throughout my never-ending coding journey. Hover over the cards for more details.
+          Following projects showcases my skills and experience throughout my never-ending coding journey.
         </motion.p>
       </div>
 
@@ -89,4 +89,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");
