@@ -9,7 +9,7 @@ import { SectionWrapper } from '../hoc';
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, deployed_link }) => {
   return (
-    <motion.div 
+    <div 
     variants={fadeIn("up", "spring", index * 0.75)} 
     className='bg-tertiary p-1 rounded-3xl sm:w-[330px] w-full'
       >
@@ -56,7 +56,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
             </p>
           ))}
         </div>
-    </motion.div>
+    </div>
   )
 }
 
