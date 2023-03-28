@@ -1,9 +1,15 @@
 import { motion } from 'framer-motion';
+import { useMediaQuery } from 'react-responsive';
 
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
+import { EarthCanvas } from './canvas';
 
 const Hero = () => {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-device-width: 1224px)'
+  });
+
   return (
     <section className='relative w-full h-screen mx-auto z-0'>
       <div className={`${styles.paddingX} absolute inset-0 pt-20 max-w-7xl mx-auto flex flex-row items-start gap-5`}>
@@ -16,7 +22,13 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop web applications, UI/UX, and <br className='sm:block hidden' />I'm looking for a job.</p>
         </div>
       </div>
-      <ComputersCanvas />
+      {isDesktopOrLaptop ? (
+        <ComputersCanvas />
+      ) : (
+        <div className='pt-80 h-[600px]'>
+          <EarthCanvas />
+        </div>
+      )}
 
 {/* added blob to let users go to the next section */}
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
